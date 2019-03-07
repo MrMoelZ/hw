@@ -5,6 +5,6 @@ app.get('/', (req, res) => {
     res.sendFile('index.html')
 })
 
-app.listen(process.env.PORT || 3003, () => {
+const server = app.listen(process.env.PORT || 3003, () => {
     console.log('listening on ', server.address().port)
 })
